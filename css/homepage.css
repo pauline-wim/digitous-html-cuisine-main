@@ -1,0 +1,14 @@
+/* HEADER */
+
+header {
+    background: url("../img/header.jpg") no-repeat center / cover;
+    color: white;
+}
+
+#navbar, #welcome {
+    background-color : rgba(0, 0, 0, 0.8);
+}
+
+#welcome {
+    height: 50vh;
+}

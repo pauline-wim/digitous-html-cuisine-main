@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/homepage.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- !HEADER -->
-    <header>
+    <header class="">
         <!-- NAVBAR -->
         <div id="navbar">
             <!-- MENU -->
@@ -41,84 +41,88 @@
         </div>
 
         <!-- WELCOME WINDOW -->
-        <div id="welcome">
-            <img src="img/logo_square_white.png" alt="">
-            <h1>Cui'zine</h1>
-            <h2>Le mag cuisine</h2>
+        <div id="welcome" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+                <img class="w-25" src="img/logo_square_white.png" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h1>Cui'zine</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h2>Le mag cuisine</h2>
+            </div>
         </div>
     </header>
 
     <!-- !ARTICLE -->
-    <section>
-        <h2>Derniers articles</h2>
+    <section class="p-4" style="border: 3px solid blue;">
+        <h2 class="text-center" style="border: 2px solid red;">Derniers articles</h2>
 
-        <!-- DERNIERS ARTICLES -->
-        <div>
-            <div id="article1">
-                <img src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
-                    <div>
-                    <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
-                    <p>la franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant
-                        à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées
-                        au froment ou au sarrazin!</p>
-                    </div>
+        <div class="row justify-content-center align-items-center m-4">
+            <!-- DERNIERS ARTICLES -->
+            <div class="col-9 p-0" style="border: 2px solid green;">
+                <div id="article1" class="d-flex m-3" style="border: 2px solid red;">
+                    <img class="w-25" src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
+                        <div class="ps-3">
+                        <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
+                        <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant
+                        à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
+                        </div>
+                </div>
+                <div id="article2" class="d-flex m-3" style="border: 2px solid red;">
+                    <img class="w-25" src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
+                        <div class="ps-3" style="border: 2px solid blue;">
+                        <h3>Le Métro dessert</h3>
+                        <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leurs deux passions dans un restaurant à la déco inspirée du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis.
+                        </p>
+                        </div>
+                </div>
+                <div id="article3" class="d-flex m-3">
+                    <img class="w-25" src="img/articles/vitaly/vitaly-small.jpg" alt="image assiette pates vegan">
+                        <div class="ps-3">
+                        <h3>Vitaly, le végan italien</h3>
+                        <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.
+                        </p>
+                        
+                        </div>
+                </div>
             </div>
-            <div id="article2">
-                <img src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
-                    <div>
-                    <h3>le Métro dessert</h3>
-                    <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir
-                        leurs deux passions dans un restaurant à la déco inspirée du métro parisien. A voir absolument, mais qu'en
-                        est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis.
-                    </p>
-                    </div>
-            </div>
-            <div id="article3">
-                <img src="img/articles/vitaly/vitaly-small.jpg" alt="image assiette pates vegan">
-                    <div>
-                    <h3>Vitaly, le végan italien</h3>
-                    <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée 
-                        des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.
-                    </p>
-                    
-                    </div>
-            </div>
-        </div>
 
-        <!-- FORMULAIRE -->
-        <div>
-            <form class="row g-3 p-4 justify-content-center" action="">
-                <!-- RECHERCHE -->
-                <div class="col-10">
-                    <label for="search" class="form-label">Recherche</label>
-                    <input type="search" id="search" class="form-control" placeholder="Recherche...">
-                    <input type="submit" value="Ok">
-                </div>
-                <!-- NEWSLETTER -->
-                <div class="col-10">
-                    <label for="email" class="form-label">Newsletter</label>
-                    <input type="email" id="email" class="form-control" placeholder="Email...">
-                    <input type="submit" value="S'inscrire">
-                </div>
-                <!-- SOCIAL -->
-                <div class="col-10">
-                    <label for="" class="form-label">Partager</label>
-                    <div>
-                        <a href="facebook.com" target="_blank">
-                            <img src="" alt="">
-                        </a>
-                        <a href="instagram.com" target="_blank">
-                            <img src="" alt="">
-                        </a>
-                        <a href="youtube.com" target="_blank">
-                            <img src="" alt="">
-                        </a>
-                        <a href="twitter.com" target="_blank">
-                            <img src="" alt="">
-                        </a>
+            <!-- FORMULAIRE -->
+            <div class="col-3">
+                <form class="row g-3 p-4 justify-content-center" action="">
+                    <!-- RECHERCHE -->
+                    <div class="col-10">
+                        <label for="search" class="form-label">Recherche</label>
+                        <input type="search" id="search" class="form-control" placeholder="Recherche...">
+                        <input type="submit" value="Ok">
                     </div>
-                </div>
-            </form>
+                    <!-- NEWSLETTER -->
+                    <div class="col-10">
+                        <label for="email" class="form-label">Newsletter</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email...">
+                        <input type="submit" value="S'inscrire">
+                    </div>
+                    <!-- SOCIAL -->
+                    <div class="col-10">
+                        <label for="" class="form-label">Partager</label>
+                        <div>
+                            <a href="facebook.com" target="_blank">
+                                <img src="" alt="">
+                            </a>
+                            <a href="instagram.com" target="_blank">
+                                <img src="" alt="">
+                            </a>
+                            <a href="youtube.com" target="_blank">
+                                <img src="" alt="">
+                            </a>
+                            <a href="twitter.com" target="_blank">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!-- RETURN LINK -->
