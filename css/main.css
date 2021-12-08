@@ -1,0 +1,38 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url(fonts/Courgette/Courgette-Regular.ttf);
+}
+
+h1, h2, h3, label, #logo {
+    font-family: 'Courgette', cursive;
+}
+
+p, #nav, input {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+/* HEADER */
+
+header {
+    background: url("../img/header.jpg") no-repeat center / cover;
+    color: white;
+}
+
+#navbar, #welcome {
+    background-color : rgba(0, 0, 0, 0.8);
+}

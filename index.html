@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homepage.css">
+
+    <!-- FONTS -->
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- !HEADER -->
     <header>
         <!-- NAVBAR -->
-        <div>
+        <div id="navbar">
             <!-- MENU -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#" role="button">Cui'zine</a>
-                    <div class="">
+                    <a id="logo" class="navbar-brand" href="#" role="button">Cui'zine</a>
+                    <div id="nav" class="">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Accueil</a>
@@ -35,20 +39,23 @@
                 </div>
             </nav>
         </div>
+
         <!-- WELCOME WINDOW -->
-        <div>
-            <img src="" alt="">
+        <div id="welcome">
+            <img src="img/logo_square_white.png" alt="">
             <h1>Cui'zine</h1>
             <h2>Le mag cuisine</h2>
         </div>
     </header>
-    <!-- ARTICLE -->
+
+    <!-- !ARTICLE -->
     <section>
         <h2>Derniers articles</h2>
+
         <!-- DERNIERS ARTICLES -->
         <div>
             <div id="article1">
-                <img src="" alt="">
+                <img src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
                     <div>
                     <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
                     <p>la franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant
@@ -57,7 +64,7 @@
                     </div>
             </div>
             <div id="article2">
-                <img src="" alt="">
+                <img src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
                     <div>
                     <h3>le Métro dessert</h3>
                     <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir
@@ -67,7 +74,7 @@
                     </div>
             </div>
             <div id="article3">
-                <img src="" alt="">
+                <img src="img/articles/vitaly/vitaly-small.jpg" alt="image assiette pates vegan">
                     <div>
                     <h3>Vitaly, le végan italien</h3>
                     <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée 
@@ -79,32 +86,93 @@
         </div>
 
         <!-- FORMULAIRE -->
-        <div></div>
+        <div>
+            <form class="row g-3 p-4 justify-content-center" action="">
+                <!-- RECHERCHE -->
+                <div class="col-10">
+                    <label for="search" class="form-label">Recherche</label>
+                    <input type="search" id="search" class="form-control" placeholder="Recherche...">
+                    <input type="submit" value="Ok">
+                </div>
+                <!-- NEWSLETTER -->
+                <div class="col-10">
+                    <label for="email" class="form-label">Newsletter</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email...">
+                    <input type="submit" value="S'inscrire">
+                </div>
+                <!-- SOCIAL -->
+                <div class="col-10">
+                    <label for="" class="form-label">Partager</label>
+                    <div>
+                        <a href="facebook.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="instagram.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="youtube.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="twitter.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
 
+        <!-- RETURN LINK -->
         <div>
             <a href="#"> « Voir les articles précédents</a>
         </div>
     </section>
-    <!-- FOOTER -->
+
+    <!-- !FOOTER -->
     <footer>
         <div>
             <h3>Catégories</h3>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="">Revues</a></li>
+                <li><a href="">Recettes</a></li>
+                <li><a href="">Découvertes</a></li>
             </ul>
         </div>
         <div>
-            <h3></h3>
+            <h3>Archives</h3>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="">2019</a></li>
+                <li><a href="">2018</a></li>
+                <li><a href="">2017</a></li>
             </ul>
         </div>
         <div>
-            <form></form>
+            <form>
+                <!-- NEWSLETTER -->
+                <div class="col-10">
+                    <label for="email" class="form-label">Newsletter</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email...">
+                    <input type="submit" value="S'inscrire">
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="col-10">
+                    <label for="" class="form-label">Partager</label>
+                    <div>
+                        <a href="facebook.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="instagram.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="youtube.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                        <a href="twitter.com" target="_blank">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                </div>
+            </form>
         </div>
 
     </footer>
