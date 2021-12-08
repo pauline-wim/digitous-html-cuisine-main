@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/homepage.css">
-
-    <!-- FONTS -->
+    
 </head>
 <body>
     <!-- !HEADER -->
     <header class="">
         <!-- NAVBAR -->
-        <div id="navbar">
+        <div id="navbar" class="border-bottom border-1 border-secondary">
             <!-- MENU -->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
@@ -41,9 +40,9 @@
         </div>
 
         <!-- WELCOME WINDOW -->
-        <div id="welcome" class="d-flex flex-column justify-content-center align-items-center">
+        <div id="welcome" class="d-flex flex-column justify-content-center align-items-center pb-5">
             <div class="d-flex justify-content-center align-items-center">
-                <img class="w-25" src="img/logo_square_white.png" alt="">
+                <img class="w-25 mb-3" src="img/logo_square_white.png" alt="logo cui'zine">
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <h1>Cui'zine</h1>
@@ -53,15 +52,15 @@
             </div>
         </div>
     </header>
-
+ 
     <!-- !ARTICLE -->
-    <section class="p-4" style="border: 3px solid blue;">
-        <h2 class="text-center" style="border: 2px solid red;">Derniers articles</h2>
+    <section class="p-4">
+        <h2 id="section-title" class="text-center mt-4 mb-4">Derniers articles</h2>
 
-        <div class="row justify-content-center align-items-center m-4">
+        <div class="row justify-content-center align-items-center m-5">
             <!-- DERNIERS ARTICLES -->
-            <div class="col-9 p-0" style="border: 2px solid green;">
-                <div id="article1" class="d-flex m-3" style="border: 2px solid red;">
+            <div class="col-9 p-0">
+                <div id="article1" class="d-flex m-3" >
                     <img class="w-25" src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
                         <div class="ps-3">
                         <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
@@ -69,9 +68,9 @@
                         à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
                         </div>
                 </div>
-                <div id="article2" class="d-flex m-3" style="border: 2px solid red;">
+                <div id="article2" class="d-flex m-3">
                     <img class="w-25" src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
-                        <div class="ps-3" style="border: 2px solid blue;">
+                        <div class="ps-3">
                         <h3>Le Métro dessert</h3>
                         <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leurs deux passions dans un restaurant à la déco inspirée du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis.
                         </p>
@@ -86,93 +85,95 @@
                         
                         </div>
                 </div>
+                <!-- RETURN LINK -->
+                <div class="m-3">
+                    <a class="link-secondary text-decoration-none" href="#"> « Voir les articles précédents</a>
+                </div>
             </div>
 
             <!-- FORMULAIRE -->
             <div class="col-3">
-                <form class="row g-3 p-4 justify-content-center" action="">
+                <form class="row g-3 justify-content-center" action="">
                     <!-- RECHERCHE -->
                     <div class="col-10">
                         <label for="search" class="form-label">Recherche</label>
                         <input type="search" id="search" class="form-control" placeholder="Recherche...">
-                        <input type="submit" value="Ok">
+                        <input class="btn btn-outline-dark w-100" type="submit" value="Ok">
                     </div>
                     <!-- NEWSLETTER -->
                     <div class="col-10">
                         <label for="email" class="form-label">Newsletter</label>
                         <input type="email" id="email" class="form-control" placeholder="Email...">
-                        <input type="submit" value="S'inscrire">
+                        <input class="btn btn-outline-dark w-100" type="submit" value="S'inscrire">
                     </div>
                     <!-- SOCIAL -->
                     <div class="col-10">
                         <label for="" class="form-label">Partager</label>
                         <div>
                             <a href="facebook.com" target="_blank">
-                                <img src="" alt="">
+                                <i class="fab fa-facebook-square icon p-1"></i>
                             </a>
                             <a href="instagram.com" target="_blank">
-                                <img src="" alt="">
+                                <i class="fab fa-instagram icon p-1"></i>
                             </a>
                             <a href="youtube.com" target="_blank">
-                                <img src="" alt="">
+                                <i class="fab fa-youtube-square icon p-1"></i>
                             </a>
                             <a href="twitter.com" target="_blank">
-                                <img src="" alt="">
+                                <i class="fab fa-twitter-square icon p-1"></i>
                             </a>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-
-        <!-- RETURN LINK -->
-        <div>
-            <a href="#"> « Voir les articles précédents</a>
-        </div>
+   
     </section>
 
     <!-- !FOOTER -->
-    <footer>
+    <footer class="bg-black text-white d-flex justify-content-around align-items-center">
         <div>
             <h3>Catégories</h3>
-            <ul>
-                <li><a href="">Revues</a></li>
-                <li><a href="">Recettes</a></li>
-                <li><a href="">Découvertes</a></li>
+            <ul class="list-group">
+                <li><a class="text-white" href="">Revues</a></li>
+                <li><a class="text-white" href="">Recettes</a></li>
+                <li><a class="text-white" href="">Découvertes</a></li>
             </ul>
         </div>
         <div>
             <h3>Archives</h3>
-            <ul>
-                <li><a href="">2019</a></li>
-                <li><a href="">2018</a></li>
-                <li><a href="">2017</a></li>
+            <ul class="list-group">
+                <li><a class="text-white" href="">2019</a></li>
+                <li><a class="text-white" href="">2018</a></li>
+                <li><a class="text-white" href="">2017</a></li>
             </ul>
         </div>
         <div>
             <form>
                 <!-- NEWSLETTER -->
-                <div class="col-10">
+                <div class="col-10 pb-3">
                     <label for="email" class="form-label">Newsletter</label>
-                    <input type="email" id="email" class="form-control" placeholder="Email...">
-                    <input type="submit" value="S'inscrire">
+                    <div class="d-flex">
+                        <input type="email" id="email" class="form-control" placeholder="Email...">
+                        <input class="btn btn-outline-light" type="submit" value="S'inscrire">
+                    </div>
                 </div>
 
                 <!-- SOCIAL -->
                 <div class="col-10">
                     <label for="" class="form-label">Partager</label>
                     <div>
-                        <a href="facebook.com" target="_blank">
-                            <img src="" alt="">
+                        <a class="bg-white rounded-1 me-1 p-1" href="facebook.com" target="_blank" role="button">
+                            <i class="fab fa-facebook-square icon p-1"></i>
                         </a>
-                        <a href="instagram.com" target="_blank">
-                            <img src="" alt="">
+                        <a class="bg-white rounded-1 me-1 p-1" href="instagram.com" target="_blank" role="button">
+                            <i class="fab fa-instagram icon p-1"></i>
                         </a>
-                        <a href="youtube.com" target="_blank">
-                            <img src="" alt="">
+                        <a class="bg-white rounded-1 me-1 p-1" href="youtube.com" target="_blank" role="button">
+                            <i class="fab fa-youtube-square icon p-1"></i>
                         </a>
-                        <a href="twitter.com" target="_blank">
-                            <img src="" alt="">
+                        <a class="bg-white rounded-1 p-1" href="twitter.com" target="_blank" role="button">
+                            <i class="fab fa-twitter-square icon p-1"></i>
                         </a>
                     </div>
                 </div>
@@ -180,6 +181,7 @@
         </div>
 
     </footer>
-
+    
+    <script src="https://kit.fontawesome.com/71e6aefe49.js" crossorigin="anonymous"></script>
 </body>
 </html>

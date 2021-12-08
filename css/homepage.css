@@ -12,3 +12,15 @@ header {
 #welcome {
     height: 50vh;
 }
+
+#section-title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.icon {
+    color: black;
+}
+
+footer {
+    height: 35vh;
+}
