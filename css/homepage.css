@@ -5,10 +5,6 @@ header {
     color: white;
 }
 
-#navbar, #welcome {
-    background-color : rgba(0, 0, 0, 0.8);
-}
-
 #welcome {
     height: 50vh;
 }

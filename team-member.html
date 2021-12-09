@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>team-member</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/team-member.css">
     
 </head>
 <body>
@@ -15,11 +16,14 @@
     <header class="">
         <!-- NAVBAR -->
         <div id="navbar" class="border-bottom border-1 border-secondary">
+
             <!-- MENU -->
             <nav class="navbar navbar-expand-lg navbar-dark">
+
                 <div class="container-fluid">
+
                     <a id="logo" class="navbar-brand" href="#" role="button">Cui'zine</a>
-                    <div id="nav" class="">
+                    <div id="nav" class="d-none d-lg-block">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Accueil</a>
@@ -34,6 +38,35 @@
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
+                    </div>
+                    <!-- RESPONSIVE BURGER MENU -->
+                    <!-- BUTTON -->
+                    <button class="d-block d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- NAVBAR -->
+                    <div class="d-block d-lg-none offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                          <button type="button" class="bg-light btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Equipe</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -52,3 +85,65 @@
             </div>
         </div>
     </header>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white d-lg-flex d-block justify-content-around align-items-center p-3 p-lg-0">
+        <div class="p-3 p-lg-0">
+            <h3>Catégories</h3>
+            <ul class="list-group">
+                <li><a class="text-white" href="">Revues</a></li>
+                <li><a class="text-white" href="">Recettes</a></li>
+                <li><a class="text-white" href="">Découvertes</a></li>
+            </ul>
+        </div>
+        <div class="p-3 p-lg-0">
+            <h3>Archives</h3>
+            <ul class="list-group">
+                <li><a class="text-white" href="">2019</a></li>
+                <li><a class="text-white" href="">2018</a></li>
+                <li><a class="text-white" href="">2017</a></li>
+            </ul>
+        </div>
+        <div class="p-3 p-lg-0">
+            <form>
+                <!-- NEWSLETTER -->
+                <div class="col-10 pb-3">
+                    <label for="email" class="form-label">Newsletter</label>
+                    <div class="d-flex">
+                        <input type="email" id="email" class="form-control" placeholder="Email...">
+                        <input class="btn btn-outline-light" type="submit" value="S'inscrire">
+                    </div>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="col-10">
+                    <label for="" class="form-label">Partager</label>
+                    <div>
+                        <a class="text-decoration-none" href="">
+                            <i class="fab fa-facebook-square text-black bg-white p-2 rounded-1 me-1"></i>
+                        </a>
+                        <a class="text-decoration-none" href="instagram.com" target="_blank" role="button">
+                            <i class="fab fa-instagram text-black bg-white rounded-1 me-1 p-2"></i>
+                        </a>
+                        <a class="text-decoration-none" href="youtube.com" target="_blank" role="button">
+                            <i class="fab fa-youtube text-black bg-white rounded-1 me-1 p-2"></i>
+                        </a>
+                        <a class="text-decoration-none" href="twitter.com" target="_blank" role="button">
+                            <i class="fab fa-twitter text-black bg-white rounded-1 me-1 p-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </footer>
+    
+    <!-- <script src="https://kit.fontawesome.com/71e6aefe49.js" crossorigin="anonymous"></script> -->
+    <script src="bootstrap.js"></script>
+</body>
+</html>
