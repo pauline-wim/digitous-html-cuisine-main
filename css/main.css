@@ -15,7 +15,7 @@
     src: url(fonts/Courgette/Courgette-Regular.ttf);
 }
 
-h1, h2, h3, label, #logo {
+h1, h2, h3, h4, label, #logo {
     font-family: 'Courgette', cursive;
 }
 
@@ -30,4 +30,20 @@ ul {
 
 #navbar, #welcome {
     background-color : rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    height: 35vh;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        height: 72vh;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    footer {
+        height: 90vh;
+    }
 }

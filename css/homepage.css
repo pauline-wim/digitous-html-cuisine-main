@@ -16,13 +16,3 @@ header {
 #section-title {
     font-family: 'Oswald', sans-serif;
 }
-
-footer {
-    height: 35vh;
-}
-
-@media screen and (max-width: 1000px) {
-    footer {
-        height: 72vh;
-    }
-}

@@ -1,0 +1,8 @@
+header {
+    background: url("../img/recipes/paella/paella-header.jpg") no-repeat center / cover;
+    color: white;
+}
+
+#welcome {
+    height: 50vh;
+}
