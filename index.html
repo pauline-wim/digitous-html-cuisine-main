@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/homepage.css">
@@ -15,9 +16,12 @@
     <header class="">
         <!-- NAVBAR -->
         <div id="navbar" class="border-bottom border-1 border-secondary">
+
             <!-- MENU -->
             <nav class="navbar navbar-expand-lg navbar-dark">
+
                 <div class="container-fluid">
+
                     <a id="logo" class="navbar-brand" href="#" role="button">Cui'zine</a>
                     <div id="nav" class="d-none d-lg-block">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,8 +39,37 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                    <!-- RESPONSIVE BURGER MENU -->
+                    <!-- BUTTON -->
+                    <button class="d-block d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- NAVBAR -->
+                    <div class="d-block d-lg-none offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                          <button type="button" class="bg-light btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Equipe</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
             </nav>
+
         </div>
 
         <!-- WELCOME WINDOW -->
@@ -54,45 +87,43 @@
     </header>
  
     <!-- !ARTICLE -->
-    <section class="p-4">
+    <section class="p-xl-4 pt-4 pb-4">
         <h2 id="section-title" class="text-center mt-4 mb-4">Derniers articles</h2>
 
-        <div class="row justify-content-center align-items-center m-5">
+        <div class="row justify-content-center align-items-center m-xl-5">
             <!-- DERNIERS ARTICLES -->
             <div class="col-9 p-0">
-                <div id="article1" class="d-flex m-3" >
-                    <img class="w-25" src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
-                        <div class="ps-3">
+                <div id="article1" class="row m-xl-3" >
+                    <img class="col-lg-4 col-12 pb-2 pb-xl-0" src="img/articles/suzette/suzette-small.jpg" alt="image de crêpe">
+                    <div class="col-lg-8 col-12 ps-xl-3">
                         <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
-                        <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant
-                        à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
-                        </div>
+                        <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
+                    </div>
                 </div>
-                <div id="article2" class="d-flex m-3">
-                    <img class="w-25" src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
-                        <div class="ps-3">
+                <div id="article2" class="row m-xl-3">
+                    <img class="col-lg-4 col-12 pb-2 pb-xl-0" src="img/articles/metro/metro-small.jpg" alt="image dessert framboise">
+                    <div class="col-lg-8 col-12 ps-xl-3">
                         <h3>Le Métro dessert</h3>
                         <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leurs deux passions dans un restaurant à la déco inspirée du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis.
                         </p>
-                        </div>
+                    </div>
                 </div>
-                <div id="article3" class="d-flex m-3">
-                    <img class="w-25" src="img/articles/vitaly/vitaly-small.jpg" alt="image assiette pates vegan">
-                        <div class="ps-3">
+                <div id="article3" class="row m-xl-3">
+                    <img class="col-lg-4 col-12 pb-2 pb-xl-0" src="img/articles/vitaly/vitaly-small.jpg" alt="image assiette pates vegan">
+                    <div class="col-lg-8 col-12 ps-xl-3">
                         <h3>Vitaly, le végan italien</h3>
                         <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.
-                        </p>
-                        
-                        </div>
+                        </p>    
+                    </div>
                 </div>
                 <!-- RETURN LINK -->
-                <div class="m-3">
+                <div class="m-xl-3 mb-4">
                     <a class="link-secondary text-decoration-none" href="#"> « Voir les articles précédents</a>
                 </div>
             </div>
 
             <!-- FORMULAIRE -->
-            <div class="col-3 d-none d-lg-block">
+            <div class="col-3 d-none d-xl-block">
                 <form class="row g-3 justify-content-center" action="">
                     <!-- RECHERCHE -->
                     <div class="col-10">
@@ -110,17 +141,17 @@
                     <div class="col-10">
                         <label for="" class="form-label">Partager</label>
                         <div>
-                            <a href="facebook.com" target="_blank">
-                                <i class="fab fa-facebook-square icon p-1"></i>
+                            <a class="text-decoration-none" href="instagram.com" target="_blank">
+                                <i class="fab fa-facebook-square text-black p-1"></i>
                             </a>
-                            <a href="instagram.com" target="_blank">
-                                <i class="fab fa-instagram icon p-1"></i>
+                            <a class="text-decoration-none" href="instagram.com" target="_blank">
+                                <i class="fab fa-instagram text-black p-1"></i>
                             </a>
-                            <a href="youtube.com" target="_blank">
-                                <i class="fab fa-youtube-square icon p-1"></i>
+                            <a class="text-decoration-none" href="youtube.com" target="_blank">
+                                <i class="fab fa-youtube text-black p-1"></i>
                             </a>
-                            <a href="twitter.com" target="_blank">
-                                <i class="fab fa-twitter-square icon p-1"></i>
+                            <a class="text-decoration-none" href="twitter.com" target="_blank">
+                                <i class="fab fa-twitter text-black p-1"></i>
                             </a>
                         </div>
                     </div>
@@ -163,17 +194,17 @@
                 <div class="col-10">
                     <label for="" class="form-label">Partager</label>
                     <div>
-                        <a class="bg-white rounded-1 me-1 p-1" href="facebook.com" target="_blank" role="button">
-                            <i class="fab fa-facebook-square icon p-1"></i>
+                        <a class="text-decoration-none" href="">
+                            <i class="fab fa-facebook-square text-black bg-white p-2 rounded-1 me-1"></i>
                         </a>
-                        <a class="bg-white rounded-1 me-1 p-1" href="instagram.com" target="_blank" role="button">
-                            <i class="fab fa-instagram icon p-1"></i>
+                        <a class="text-decoration-none" href="instagram.com" target="_blank" role="button">
+                            <i class="fab fa-instagram text-black bg-white rounded-1 me-1 p-2"></i>
                         </a>
-                        <a class="bg-white rounded-1 me-1 p-1" href="youtube.com" target="_blank" role="button">
-                            <i class="fab fa-youtube-square icon p-1"></i>
+                        <a class="text-decoration-none" href="youtube.com" target="_blank" role="button">
+                            <i class="fab fa-youtube text-black bg-white rounded-1 me-1 p-2"></i>
                         </a>
-                        <a class="bg-white rounded-1 p-1" href="twitter.com" target="_blank" role="button">
-                            <i class="fab fa-twitter-square icon p-1"></i>
+                        <a class="text-decoration-none" href="twitter.com" target="_blank" role="button">
+                            <i class="fab fa-twitter text-black bg-white rounded-1 me-1 p-2"></i>
                         </a>
                     </div>
                 </div>
@@ -182,6 +213,7 @@
 
     </footer>
     
-    <script src="https://kit.fontawesome.com/71e6aefe49.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/71e6aefe49.js" crossorigin="anonymous"></script> -->
+    <script src="bootstrap.js"></script>
 </body>
 </html>
