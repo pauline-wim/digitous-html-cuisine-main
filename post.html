@@ -26,16 +26,16 @@
                     <div id="nav" class="d-none d-lg-block">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Equipe</a>
+                                <a class="nav-link" href="team.html">Equipe</a>
                             </li>
                             <li class="nav-item"> 
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="post.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -53,17 +53,17 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Equipe</a>
+                                    <a class="nav-link" href="team.html">Equipe</a>
                                 </li>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="post.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -73,20 +73,124 @@
         </div>
 
         <!-- WELCOME WINDOW -->
-        <div id="welcome" class="d-flex flex-column top-50 align-items-center pt-5">
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="w-50 mb-3" src="img/logo_square_white.png" alt="logo cui'zine">
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <h1>Cui'zine</h1>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <h2>Le mag cuisine</h2>
+        <div id="welcome" class="d-flex justify-content-center align-items-center pb-5">
+            <div class="">
+                <h1>Chez Suzette, la nouvelle creperie qui fait parler d'elle</h1>
             </div>
         </div>
     </header>
 
+    <!-- !ARTICLE -->
+    <section class="p-xl-4 pt-4 pb-4">
+        <div class="row">
+            <div class="col-9">
+                <!-- CRITIQUE -->
+                <div class="border-bottom border-1 border-light ">
+                    <h2>Intro</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis sed distinctio eligendi necessitatibus laudantium sunt soluta at magnam voluptatem!</p>
+                    <h2>Développement</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis sed distinctio eligendi necessitatibus laudantium sunt soluta at magnam voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam modi velit quos, quo possimus maxime, sequi optio vitae, illo sit minima perspiciatis. Earum eaque sit, ea cupiditate consectetur rerum porro, ex dolore repellat veritatis nostrum perferendis est repellendus magni.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis sed distinctio eligendi necessitatibus laudantium sunt soluta at magnam voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam modi velit quos, quo possimus maxime, sequi optio vitae, illo sit minima perspiciatis. Earum eaque sit, ea cupiditate consectetur rerum porro, ex dolore repellat veritatis nostrum perferendis est repellendus magni.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis sed distinctio eligendi necessitatibus laudantium sunt soluta at magnam voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam modi velit quos, quo possimus maxime, sequi optio vitae, illo sit minima perspiciatis. Earum eaque sit, ea cupiditate consectetur rerum porro, ex dolore repellat veritatis nostrum perferendis est repellendus magni.
+                    </p>
+                    <h2>Conclusion</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis sed distinctio eligendi necessitatibus laudantium sunt soluta at magnam voluptatem!</p>
+                </div>
+                <!-- AUTEUR -->
+                <div class="w-75 d-flex m-auto justify-content-center align-items-center p-5">
+                    <img class="rounded-circle w-25" src="img/team/antoine.jpg" alt="Photo de profil de Antoine">
+                    <div class="ps-4">
+                        <h3>A propos de l'auteur</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur deleniti nulla amet! Voluptate et, ratione natus dolorum voluptas perferendis?</p>
+                    </div>
+                </div>
+                <!-- CONTACT -->
+                <form class="m-auto border-top border-1 border-light w-50">
+                    <!-- EMAIL -->
+                    <div class="col-10 mt-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Votre email...">   
+                    </div>
+                    <!-- NOM -->
+                    <div class="col-10 mt-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" class="form-control" placeholder="Votre nom...">
+                    </div>
+                    <!-- TEXTAREA -->
+                    <div class="col-10 mt-3">
+                        <label for="textarea" class="form-label">Commentaire</label>
+                        <textarea name="textarea" id="textarea" class="form-control" cols="30" rows="10" placeholder="Votre commentaire..."></textarea>
+                        <input class="btn btn-outline-dark w-100" type="submit" value="Envoyer">
+                    </div>
 
+                </form>
+                <!-- AVIS -->
+                <div class="d-flex-column m-5">
+                    <h2>Dites nous ce que vous en avez pensé</h2>
+                    <div class="w-50 d-flex pt-4">
+                        <img class="w-25" src="img/logo_square_black.png" alt="logo">
+                        <div class="ps-4">
+                            <h3>Mathieu</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempora.</p>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex pt-4">
+                        <img class="w-25" src="img/logo_square_black.png" alt="logo">
+                        <div class="ps-4">
+                            <h3>Suzette</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempora.</p>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex pt-4 ms-5 opacity-50">
+                        <img class="w-25" src="img/logo_square_black.png" alt="logo">
+                        <div class="ps-4">
+                            <h3>Haterz</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULAIRE -->
+            <div class="col-3 d-none d-xl-block">
+                <form class="row g-3 justify-content-center" action="">
+                    <!-- RECHERCHE -->
+                    <div class="col-10">
+                        <label for="search" class="form-label">Recherche</label>
+                        <input type="search" id="search" class="form-control" placeholder="Recherche...">
+                        <input class="btn btn-outline-dark w-100" type="submit" value="Ok">
+                    </div>
+                    <!-- NEWSLETTER -->
+                    <div class="col-10">
+                        <label for="email" class="form-label">Newsletter</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email...">
+                        <input class="btn btn-outline-dark w-100" type="submit" value="S'inscrire">
+                    </div>
+                    <!-- SOCIAL -->
+                    <div class="col-10">
+                        <label for="" class="form-label">Partager</label>
+                        <div>
+                            <a class="text-decoration-none" href="instagram.com" target="_blank">
+                                <i class="fab fa-facebook-square text-black p-1"></i>
+                            </a>
+                            <a class="text-decoration-none" href="instagram.com" target="_blank">
+                                <i class="fab fa-instagram text-black p-1"></i>
+                            </a>
+                            <a class="text-decoration-none" href="youtube.com" target="_blank">
+                                <i class="fab fa-youtube text-black p-1"></i>
+                            </a>
+                            <a class="text-decoration-none" href="twitter.com" target="_blank">
+                                <i class="fab fa-twitter text-black p-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   
+    </section>
 
 
 

@@ -1,0 +1,12 @@
+header {
+    background: url("../img/articles/suzette/suzette-header.jpg") no-repeat center / cover;
+    color: white;
+}
+
+#welcome {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
